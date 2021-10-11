@@ -1,0 +1,19 @@
+[package]
+name = "ftr_voterv4"
+version = "0.1.4"
+description = "Created with Anchor"
+edition = "2018"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "ftr_voterv4"
+
+[features]
+no-entrypoint = []
+no-idl = []
+cpi = ["no-entrypoint"]
+default = []
+
+[dependencies]
+anchor-lang = { path = "../../../../lang" }
+anchor-spl = { path = "../../../../spl" }
